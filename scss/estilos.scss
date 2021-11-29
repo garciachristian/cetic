@@ -1,0 +1,526 @@
+// Importo los archivos de estilo por separado //
+@import "estructuras";
+@import "tipografias";
+@import "variables";
+ 
+
+/* Reseteo del CSS */
+
+* {
+    Margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+    //***********************//
+   //   Paleta de Colores   //
+  //***********************//
+  //Marron texto = $marronTexto
+  //Background rosado = $fondoPrincipal
+  //Gris oscuro navbar y footer = $grisOscuro
+  //Rojo Logo = $rojoCetic
+  
+  /* Formato de titulos h1 */
+  
+  h1 {
+    color: $marronTexto;
+    font-family: $fuenteH1;
+    font-size: 2.1rem;
+    padding: 1.6rem;
+  }
+  
+  /* Formato titulos h2 */
+  
+  h2 {
+    color: $marronTexto;
+    font-family: $fuenteH2;
+    font-size: 2.4rem;
+    font-style: bold;
+    padding: 1.6rem;
+  }
+  
+  /* Formato del header */
+  
+  header {
+    background-color: $headerBgColor;
+  }
+  
+  /* Formato para el titulo del header */
+  
+  .headerH1 {
+    color: $rojoCetic;
+    font-family: $fuenteHeader;
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem #756969;
+  }
+  
+  /* Formato de parrafos */
+  
+  p {
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-align: justify;
+  }
+  
+  /* Redimensiono la imagen del logo */
+  
+  .imageSize {
+    width: 22rem;
+    filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(77, 77, 76, 0.8));
+  }
+  
+  /* Color para el background del body, mismo que en el header */
+  
+  body {
+    font-family: $fuenteBody;
+    background-image: $fondoPrincipal;
+  }
+  
+  /* Contenedor central que tiene dos secciones: "Ultimas Noticias" y "Empresas Destacadas" */
+  
+  main {
+    margin: 0rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .navBg {
+    background-color: $grisOscuro;
+    color: $textoClaro;
+  }
+  
+  /* Color al pasar el mouse por encima de los elementos de la Navbar */
+  
+  nav ul li a:hover {
+    background-color: $rojoCetic;
+    color: $textoClaro;
+  }
+  
+  /* Formato para los elementos de la Navbar (desplegables-abajo)*/
+  
+  .dropdown-menu {
+    position: relative;
+    z-index: 1000;
+    display: none;
+    min-width: 20rem;
+    padding: 1rem 0rem;
+    margin: 1rem 1.2rem;
+    font-size: 1.25rem;
+    color: $textoClaro;
+    text-align: left;
+    list-style: none;
+    background-color: $grisOscuro;
+    background-clip: padding-box;
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    animation: scaleZ 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+  
+  @keyframes scaleZ {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    80% {
+      transform: scale(1.07);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1.4rem;
+    clear: both;
+    font-weight: 400;
+    color: $textoClaro;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  /* Formato para los titulos (nivel superior) del submenu de la barra de navegacion */
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: $textoClaro;
+    font-size: 1.25rem;
+    min-width: 20rem;
+    text-align: center;
+    padding: 0rem;
+    line-height: 3rem;
+    border-left: 0.1rem solid rgba(0, 0, 0, 0.25);
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.25);
+  }
+  
+  .dropdown-item {
+    &:hover, &:focus {
+      color: $textoClaro;
+      background-color: $rojoCetic;
+    }
+  }
+
+  /* Formato del formulario */
+  
+  form {
+    margin: 1.6rem;
+    padding: 1.6rem;
+  }
+  
+  /* Formato del contenedor dentro del formulario */
+  
+  fieldset {
+    padding: 1.6rem;
+    width: 40%;
+    background-color: $grisFormulario;
+  }
+  
+  /* Clase para los botones del formulario */
+  
+  .buttonForm {
+    width: 19.2rem;
+    height: 4.8rem;
+  }
+  
+  /* Declaro los margenes y paddings para una tabla con listas, en 3 clases */
+  
+  .tableMargin {
+    margin-left: 3.2rem;
+    margin-top: 1.6rem;
+    border: $grisOscuro solid 0.2rem;
+    padding: 0rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Formato para los margenes en las listas */
+  
+  .ulMargin {
+    margin-left: 3.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    margin-right: 3.2rem;
+    list-style-type: square;
+    list-style-position: outside;
+  }
+  
+  /* Formato de seccion redes sociales */
+  
+  aside {
+    padding: 0rem;
+    margin: 0rem 2rem 2rem 0rem;
+    box-sizing: border-box;
+  }
+  
+  /* Formato para los iframes de Youtube */
+  
+  .iframeSize {
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 22rem;
+  }
+  
+  /* Contenedor para los iFrame de Youtube */
+  .containerYoutube {
+    background-color: white;
+    border: 0.4rem solid $grisOscuro;
+    border-top: none;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* Formato para el iFrame de Twitter */
+
+  .twitterBox {
+      height: 157vh;
+      border: 0.1rem solid $grisOscuro;
+      box-shadow: 0 0.6rem $grisOscuro;
+      padding: 0;
+      border-radius: 0 0 1rem 1rem;
+      width: 100%;
+      margin-bottom: 5rem;
+      border-left: 0.4rem solid $grisOscuro;
+      border-right: 0.4rem solid $grisOscuro;
+  }
+
+  /* Encabezado de las secciones de la pagina principal*/
+  
+  .containerHeader {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    color: $textoClaro;
+    line-height: 3.4rem;
+    background-color: $rojoCetic;
+    font-size: 1.4rem;
+    padding: 0rem;
+    border-radius: 2rem;
+  }
+
+  /* Contenedor para los titulos de las redes sociales, borde redondeado solo arriba */
+  .containerHeaderRs {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    color: $textoClaro;
+    line-height: 3.4rem;
+    background-color: $grisOscuro;
+    font-size: 1.4rem;
+    padding: 0rem;
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  /* Formato para los iconos en los títulos de redes sociales */
+  .imageTitleRs {
+    max-height: 2rem;
+    vertical-align: text-bottom;
+    padding-top: 0.2rem;
+  }
+
+  /* Contenedor para la seccion noticias, clase padre */
+  .containerNoticias {
+    margin-bottom: 3.2rem;
+    div {
+      text-align: justify;
+      overflow: hidden;
+    }
+  }
+  
+  /* Contenedor para la seccion de empresas destacadas en el home */
+  .cardEmpresas {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1.6rem;
+    padding: 2.4rem 1rem;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    justify-content: center;
+    border: 0.5rem solid #e8d4d4;
+  }
+
+  /* Formato para las imagenes de Noticias */
+  .imagenNoticias {
+    padding: 3rem 1.6rem 0.8rem 1.6rem;
+    box-sizing: border-box;
+    border-radius: 2.5rem;
+  }
+  
+  /* Formato de texto para noticias */
+  
+  .parrafoNoticias {
+    padding: 0rem 1.6rem 2.2rem 1.6rem;
+    margin: 0rem 0rem;
+  }
+  
+  /* Formato del footer */
+  
+  footer {
+    grid-area: footer;
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: $grisOscuro;
+    div {
+      width: 100%;
+      padding-top: 1.5rem;
+    }
+  }
+  
+  /* Formato del pie para el Copyright */
+  
+  .copyright {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    margin: 0rem;
+    border: 0rem;
+    background-color: $grisOscuro;
+    color: $textoClaro;
+  }
+  
+  /* Boton para volver al home */
+  
+  .buttonBack {
+    border: none;
+    color: $textoClaro;
+    padding: 1rem 3.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 1.6rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: $grisOscuro;
+    border: 0.2rem solid $grisOscuro;
+    border-radius: 1rem;
+  
+    &:hover {
+      background-color: $rojoCetic;
+      color: $textoClaro;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  /* Formato para tabla de la Comision Directiva*/
+  .tablaCD {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;  
+    font-family: $fuenteTablas;
+    font-size: 1.2rem;
+    border-collapse: separate;
+    border-spacing: 0.8rem;
+  }
+
+  
+  /* ================================================================================== */
+  /* ----------------------------------- MEDIA QUERIES -------------------------------- */
+  /* ================================================================================== */
+  
+  /*================ Aplico media query para TABLETS en modo vertical ==================*/
+  @media only screen and (max-width: 768px) {
+    /* Achico el texto del encabezado */
+  
+    header {
+      div {
+          h1 {
+            font-size: 1.8rem;
+                }
+          }
+      .imageSize {
+        width: 16rem;
+      }
+    }
+  
+    /* Achico el logo del encabezado */
+  }
+  
+  /* Aplico media query para CELULARES en modo vertical */
+  @media only screen and (max-width: 480px) {
+    /* Achico la imagen del logo */
+  
+    .imageSize {
+      width: 15rem;
+    }
+  
+    /* Oculto el texto del encabezado */
+  
+    header {
+        div {
+            h1 {
+      display: none;
+            }
+        }
+    }
+  }
+  
+  /* ================================================================================== */
+  /* ------------------- ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES ----------------- */
+  /* ================================================================================== */
+  
+  /* Hago que el texto del header aparezca suavemente */
+  
+  .bounceTextHeader {
+    position: static;
+    animation-name: textBounce;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  }
+  
+  @keyframes textBounce {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Zoom en los iconos de las redes sociales */
+  
+  .imgHoverFooter {
+    transition: transform .2s;
+    width: 3.4rem;
+    height: 3.2rem;
+    margin: 0rem 1rem;
+  
+    &:hover {
+      transform: scale(1.1) translate(0rem, -0.5rem);
+      filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(224, 221, 221, 0.8));
+    }
+  }
+  
+  /* (aumento del 30% y muevo hacia arriba los iconos) */
+  
+  /* Hago que el logo se achique 20% al pasar el puntero por encima */
+  
+  .imgHoverLogo {
+    transition: transform 0.6s;
+    width: 22rem;
+  
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+  
+  /* Hago que el carrusel principal aparezca suavemente */
+  
+  .bounceCarrusel {
+    position: static;
+    animation-name: carruselBounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  }
+  
+  @keyframes carruselBounce {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplico un efecto zumbido a los logos de la seccion empresas */
+  
+  .cardImg {
+    width: 50%;
+    &:hover, &:focus, &:active {
+      animation-name: buzz;
+      animation-duration: 0.15s;
+      animation-timing-function: linear;
+      animation-iteration-count: 2;
+    }
+  }
+  
+  @keyframes buzz {
+    50% {
+      transform: translateX(3px) rotate(2deg);
+    }
+  
+    100% {
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }

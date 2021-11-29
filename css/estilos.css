@@ -1,0 +1,700 @@
+@charset "UTF-8";
+/*=============================================*/
+/*                 TIPOGRAFIAS                 */
+/*=============================================*/
+/*=============================================*/
+/*                   COLORES                   */
+/*=============================================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sectionEmpresas {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contenedorCards {
+  margin: 70px 0;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cardThumbnail {
+  min-width: 20rem;
+  min-height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.cardImg {
+  width: 100%;
+}
+
+.cardTitulo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardEnlace {
+  color: #000;
+  text-decoration: none;
+}
+
+.cardExtracto {
+  line-height: 28px;
+  color: #6D6D6D;
+  margin-bottom: 20px;
+}
+
+.boton {
+  border: none;
+  min-width: 180px;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 0 30px;
+  background: #000;
+  color: azure;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.botonTexto {
+  font-weight: 600;
+}
+
+.boton:hover {
+  background: #ac0304;
+  text-decoration: none;
+  color: azure;
+}
+
+.botonAbsolute {
+  position: absolute;
+  right: 20px;
+  bottom: -25px;
+}
+
+/*=============================================*/
+/*                 TIPOGRAFIAS                 */
+/*=============================================*/
+/*=============================================*/
+/*                   COLORES                   */
+/*=============================================*/
+/* Reseteo del CSS */
+* {
+  Margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Formato de titulos h1 */
+h1 {
+  color: #3a1515;
+  font-family: serif;
+  font-size: 2.1rem;
+  padding: 1.6rem;
+}
+
+/* Formato titulos h2 */
+h2 {
+  color: #3a1515;
+  font-family: serif;
+  font-size: 2.4rem;
+  font-style: bold;
+  padding: 1.6rem;
+}
+
+/* Formato del header */
+header {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+/* Formato para el titulo del header */
+.headerH1 {
+  color: #ac0304;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem #756969;
+}
+
+/* Formato de parrafos */
+p {
+  padding: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  text-align: justify;
+}
+
+/* Redimensiono la imagen del logo */
+.imageSize {
+  width: 22rem;
+  -webkit-filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(77, 77, 76, 0.8));
+          filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(77, 77, 76, 0.8));
+}
+
+/* Color para el background del body, mismo que en el header */
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: radial-gradient(73% 147%, #e0ccccd5 60%, #b8b7b7 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Contenedor central que tiene dos secciones: "Ultimas Noticias" y "Empresas Destacadas" */
+main {
+  margin: 0rem 2rem 2rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navBg {
+  background-color: #333;
+  color: azure;
+}
+
+/* Color al pasar el mouse por encima de los elementos de la Navbar */
+nav ul li a:hover {
+  background-color: #ac0304;
+  color: azure;
+}
+
+/* Formato para los elementos de la Navbar (desplegables-abajo)*/
+.dropdown-menu {
+  position: relative;
+  z-index: 1000;
+  display: none;
+  min-width: 20rem;
+  padding: 1rem 0rem;
+  margin: 1rem 1.2rem;
+  font-size: 1.25rem;
+  color: azure;
+  text-align: left;
+  list-style: none;
+  background-color: #333;
+  background-clip: padding-box;
+  border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  -webkit-animation: scaleZ 300ms ease-in-out forwards;
+          animation: scaleZ 300ms ease-in-out forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
+@-webkit-keyframes scaleZ {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleZ {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1.4rem;
+  clear: both;
+  font-weight: 400;
+  color: azure;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+/* Formato para los titulos (nivel superior) del submenu de la barra de navegacion */
+.navbar-dark .navbar-nav .nav-link {
+  color: azure;
+  font-size: 1.25rem;
+  min-width: 20rem;
+  text-align: center;
+  padding: 0rem;
+  line-height: 3rem;
+  border-left: 0.1rem solid rgba(0, 0, 0, 0.25);
+  border-right: 0.1rem solid rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: azure;
+  background-color: #ac0304;
+}
+
+/* Formato del formulario */
+form {
+  margin: 1.6rem;
+  padding: 1.6rem;
+}
+
+/* Formato del contenedor dentro del formulario */
+fieldset {
+  padding: 1.6rem;
+  width: 40%;
+  background-color: silver;
+}
+
+/* Clase para los botones del formulario */
+.buttonForm {
+  width: 19.2rem;
+  height: 4.8rem;
+}
+
+/* Declaro los margenes y paddings para una tabla con listas, en 3 clases */
+.tableMargin {
+  margin-left: 3.2rem;
+  margin-top: 1.6rem;
+  border: #333 solid 0.2rem;
+  padding: 0rem;
+  border-radius: 0.5rem;
+}
+
+/* Formato para los margenes en las listas */
+.ulMargin {
+  margin-left: 3.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-right: 3.2rem;
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+/* Formato de seccion redes sociales */
+aside {
+  padding: 0rem;
+  margin: 0rem 2rem 2rem 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Formato para los iframes de Youtube */
+.iframeSize {
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 22rem;
+}
+
+/* Contenedor para los iFrame de Youtube */
+.containerYoutube {
+  background-color: white;
+  border: 0.4rem solid #333;
+  border-top: none;
+  width: 100%;
+  margin: auto;
+}
+
+/* Formato para el iFrame de Twitter */
+.twitterBox {
+  height: 157vh;
+  border: 0.1rem solid #333;
+  -webkit-box-shadow: 0 0.6rem #333;
+          box-shadow: 0 0.6rem #333;
+  padding: 0;
+  border-radius: 0 0 1rem 1rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  border-left: 0.4rem solid #333;
+  border-right: 0.4rem solid #333;
+}
+
+/* Encabezado de las secciones de la pagina principal*/
+.containerHeader {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  color: azure;
+  line-height: 3.4rem;
+  background-color: #ac0304;
+  font-size: 1.4rem;
+  padding: 0rem;
+  border-radius: 2rem;
+}
+
+/* Contenedor para los titulos de las redes sociales, borde redondeado solo arriba */
+.containerHeaderRs {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  color: azure;
+  line-height: 3.4rem;
+  background-color: #333;
+  font-size: 1.4rem;
+  padding: 0rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+/* Formato para los iconos en los títulos de redes sociales */
+.imageTitleRs {
+  max-height: 2rem;
+  vertical-align: text-bottom;
+  padding-top: 0.2rem;
+}
+
+/* Contenedor para la seccion noticias, clase padre */
+.containerNoticias {
+  margin-bottom: 3.2rem;
+}
+
+.containerNoticias div {
+  text-align: justify;
+  overflow: hidden;
+}
+
+/* Contenedor para la seccion de empresas destacadas en el home */
+.cardEmpresas {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1.6rem;
+  padding: 2.4rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.5rem solid #e8d4d4;
+}
+
+/* Formato para las imagenes de Noticias */
+.imagenNoticias {
+  padding: 3rem 1.6rem 0.8rem 1.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2.5rem;
+}
+
+/* Formato de texto para noticias */
+.parrafoNoticias {
+  padding: 0rem 1.6rem 2.2rem 1.6rem;
+  margin: 0rem 0rem;
+}
+
+/* Formato del footer */
+footer {
+  grid-area: footer;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #333;
+}
+
+footer div {
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+/* Formato del pie para el Copyright */
+.copyright {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  margin: 0rem;
+  border: 0rem;
+  background-color: #333;
+  color: azure;
+}
+
+/* Boton para volver al home */
+.buttonBack {
+  border: none;
+  color: azure;
+  padding: 1rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 1.6rem;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #333;
+  border: 0.2rem solid #333;
+  border-radius: 1rem;
+}
+
+.buttonBack:hover {
+  background-color: #ac0304;
+  color: azure;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Formato para tabla de la Comision Directiva*/
+.tablaCD {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  border-collapse: separate;
+  border-spacing: 0.8rem;
+}
+
+/* ================================================================================== */
+/* ----------------------------------- MEDIA QUERIES -------------------------------- */
+/* ================================================================================== */
+/*================ Aplico media query para TABLETS en modo vertical ==================*/
+@media only screen and (max-width: 768px) {
+  /* Achico el texto del encabezado */
+  header div h1 {
+    font-size: 1.8rem;
+  }
+  header .imageSize {
+    width: 16rem;
+  }
+  /* Achico el logo del encabezado */
+}
+
+/* Aplico media query para CELULARES en modo vertical */
+@media only screen and (max-width: 480px) {
+  /* Achico la imagen del logo */
+  .imageSize {
+    width: 15rem;
+  }
+  /* Oculto el texto del encabezado */
+  header div h1 {
+    display: none;
+  }
+}
+
+/* ================================================================================== */
+/* ------------------- ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES ----------------- */
+/* ================================================================================== */
+/* Hago que el texto del header aparezca suavemente */
+.bounceTextHeader {
+  position: static;
+  -webkit-animation-name: textBounce;
+          animation-name: textBounce;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes textBounce {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textBounce {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Zoom en los iconos de las redes sociales */
+.imgHoverFooter {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  width: 3.4rem;
+  height: 3.2rem;
+  margin: 0rem 1rem;
+}
+
+.imgHoverFooter:hover {
+  -webkit-transform: scale(1.1) translate(0rem, -0.5rem);
+          transform: scale(1.1) translate(0rem, -0.5rem);
+  -webkit-filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(224, 221, 221, 0.8));
+          filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(224, 221, 221, 0.8));
+}
+
+/* (aumento del 30% y muevo hacia arriba los iconos) */
+/* Hago que el logo se achique 20% al pasar el puntero por encima */
+.imgHoverLogo {
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  width: 22rem;
+}
+
+.imgHoverLogo:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+/* Hago que el carrusel principal aparezca suavemente */
+.bounceCarrusel {
+  position: static;
+  -webkit-animation-name: carruselBounce;
+          animation-name: carruselBounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes carruselBounce {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes carruselBounce {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Aplico un efecto zumbido a los logos de la seccion empresas */
+.cardImg {
+  width: 50%;
+}
+
+.cardImg:hover, .cardImg:focus, .cardImg:active {
+  -webkit-animation-name: buzz;
+          animation-name: buzz;
+  -webkit-animation-duration: 0.15s;
+          animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg);
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
