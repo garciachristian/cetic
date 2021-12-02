@@ -98,39 +98,63 @@
     <!--================= Fin barra de navegacion ==================-->
 
     <section class="container">
-        <h2 class="text-center fw-bold pt-5" class="text-center">Formulario de contacto</h2>
+        <h2 class="text-center fw-bold pt-5" class="text-center">Contáctenos</h2>
         <!-- Muestro el formulario de contacto -->
-        <form class="d-flex justify-content-center" action="enviar_form.php" method="post"
-            enctype="application/x-www-form-urlencoded" target="_blank">
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" name="nombre" placeholder="Juan Carlos"><br><br>
-                <label for="apellido">Apellido:</label><br>
-                <input type="text" name="apellido" placeholder="Martinez"><br><br>
-                <label for="email">Correo electrónico:</label><br>
-                <input type="text" name="email" placeholder="juan@sion.com"><br><br>
-                <div>
-                    Hombre<input type="radio" name="sexo" value="Hombre" />
-                    Mujer<input type="radio" name="sexo" value="Mujer" />
-                    Otro<input type="radio" name="sexo" value="Otro" />
-                </div><br>
-                <select name="tipo_consulta">
-                    <option value="starter" hidden>Tipo de consulta a efectuar...</option>
-                    <option value="asociarse">Me quiero asociar</option>
-                    <option value="contable">Consulta contable</option>
-                    <option value="legal">Asesoramiento legal</option>
-                    <option value="otras">Otras consultas</option>
-                </select><br>
-                <textarea name="comentarios" cols="50"
-                    placeholder="Puede dejar su consulta o comentario aqui..."></textarea>
-                <div><br>Acepta recibir nuestro newsletter mensual?
-                    <input type="checkbox" name="acepta" value="1" />
-                </div><br>
-                <input class="buttonForm" type="submit" value="Enviar formulario">
-                <input class="buttonForm" type="reset" value="Borrar todo"><br><br>
-            </fieldset>
-        </form>
+        <fieldset class="w-75">
+            <form action="enviar_form.php" method="post" enctype="application/x-www-form-urlencoded" target="_blank">
+                <!-- Datos personales -->
+                <div class="form-group py-3">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control inputForm" name="nombre" placeholder="Juan Carlos">
+                </div>
+                <div class="form-group py-3">
+                    <label for="nombre">Apellido:</label>
+                    <input type="text" class="form-control inputForm" name="apellido" placeholder="López">
+                </div>
+                <div class="form-group py-3">
+                    <label for="nombre">Empresa:</label>
+                    <input type="text" class="form-control inputForm" name="empresa" placeholder="Nombre de su empresa">
+                </div>
+                <div class="form-group py-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control inputForm" id="email" placeholder="Ingrese email" name="email">
+                </div>
+                <div class="form-group py-3">
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" checked> Hombre
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio"> Mujer
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio"> Otro
+                    </label>
+                </div>
+                <!-- Opciones y comentarios -->
+                <div class="form-group py-3">
+                    <select name="tipo_consulta">
+                        <option value="starter" hidden>Tipo de consulta a efectuar...</option>
+                        <option value="asociarse">Me quiero asociar</option>
+                        <option value="contable">Consulta contable</option>
+                        <option value="legal">Asesoramiento legal</option>
+                        <option value="otras">Otras consultas</option>
+                    </select>
+                </div>
+                <div class="form-group py-3">
+                    <label for="comment">Comentarios:</label>
+                    <textarea class="form-control inputForm" rows="5" id="comentarios"
+                        placeholder="Puede dejar su consulta o comentario aqui..."></textarea>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value=""> Acepto recibir el newsletter mensual</label>
+                </div>
+                <!-- Botones -->
+                <div class="d-flex justify-content-evenly py-5">
+                    <input class="buttonForm inputForm" type="submit" value="Enviar formulario">
+                    <input class="buttonForm inputForm" type="reset" value="Borrar todo">
+                </div>
+            </form>
+        </fieldset>
         <br>
         <div class="text-center">
             <a href="../index.html#top" class="buttonBack">Volver al inicio</a>
@@ -166,6 +190,7 @@
 
     <!-- JavaScript para Bootstrap -->
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
 </body>
 
 </html>

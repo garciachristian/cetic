@@ -21,6 +21,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cámara Empresaria de Tecnología, Informática y Comunicaciones</title>
 </head>
 
@@ -98,15 +99,74 @@
     <!--================= Fin barra de navegacion ==================-->
 
     <section>
-        <h2 class="text-center fw-bold pt-5">Formación profesional</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, hic? Officiis at nemo recusandae facilis
-            dolorum a
-            consequatur. Tempora atque minima qui reprehenderit architecto eveniet quisquam? Veniam ipsum facere non.
-        </p>
+        <h2 class="text-center fw-bold pt-5">Formación para empresas</h2>
+        <div class="container">
+            <p>La mejora de las competencias de los trabajadores y trabajadoras incide directamente sobre la
+                productividad y competitividad de tu empresa. Desde el departamento de Formación Profesional de la
+                <b>CETIC</b> te proporcionamos la mejor formación "In Company", adecuada para tu empresa en función
+                de tus necesidades y objetivos. Una formación a medida, en cuanto a duración y contenido, e impartida
+                exclusivamente para tu equipo.
+            </p>
+            <div class="container-fluid w-75">
+                <img class="mx-auto d-block mb-5 w-100 shadow-lg rounded" src="../images/formacion-profesional.jpg"
+                    alt="Formacion profesional">
+            </div>
+            <!-- Elementos con imagenes para detallar los cursos -->
+            <h2 class="text-center fw-bold pt-5">Elementos y competencias</h2>
+            <div class="row">
+                <div class="container-fluid d-flex justify-content-evenly flex-row row">
+                    <!-- Primer grupo de 4 imagenes -->
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/hab_directivas.png" alt="Habilidades directivas">
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/hab_personales.png" alt="Habilidades personales">
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/idiomas.png" alt="Idiomas">
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/marketing.png" alt="Marketing y ventas">
+                    </div>
+                    <!-- Segundo grupo de 4 imagenes -->
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/informatica.png" alt="Informatica">
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/rrhh.png" alt="Recursos humanos">
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/finanzas.png" alt="Contabilidad y finanzas">
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="cardEmpresas col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <img class="cardImgIndex" src="../images/tecnicas.png" alt="Tecnicas especificas">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
         <div class="text-center">
             <a href="../index.html#top" class="buttonBack">Volver al inicio</a>
         </div>
     </section>
+
     <!--============================= Footer ===============================-->
     <footer class="container-fluid">
         <!--Aqui van los iconos que linkean a las redes sociales-->
@@ -137,6 +197,12 @@
 
     <!-- JavaScript para Bootstrap -->
     <script src="../js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
 
 </html>

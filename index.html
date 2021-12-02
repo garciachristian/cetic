@@ -8,7 +8,8 @@
     <meta name="description" content="CETIC Cámara Empresaria de Tecnología, Informática y Comunicaciones. Su principal 
     objetivo es asociar a la mayoría de las empresas y profesionales que desarrollen su actividad en el ámbito
     de la tecnología, o sectores de la Economía del Conocimiento.">
-    <meta name="keywords" content="cetic, camara, cámara, empresas, empresaria, tecnología, informática, comunicaciones">
+    <meta name="keywords"
+        content="cetic, camara, cámara, empresas, empresaria, tecnología, informática, comunicaciones">
     <link rel="icon" href="favicon.ico">
     <!-- Estilos personalizados + Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -20,6 +21,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cámara Empresaria de Tecnología, Informática y Comunicaciones</title>
 </head>
 
@@ -104,28 +106,27 @@
     <!--================= Fin barra de navegacion ==================-->
 
     <!--===================== Sección Carrusel =====================-->
-    <section id="carouselCaptions" class="container-fluid carousel bounceCarrusel slide mb-5 mx-0 px-0"
-        data-bs-ride="carousel">
+    <section id="carouselCaptions" class="carousel bounceCarrusel slide mb-5 mx-0 px-0" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
+            <div class="carousel-item active" data-bs-interval="2500">
                 <img src="./images/Congreso_industria_4_001.jpg" class="d-block w-100 img-fluid"
                     alt="Congreso de Industria 4.0">
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="2500">
                 <img src="./images/Congreso_industria_4_002.jpg" class="d-block w-100 img-fluid"
                     alt="Congreso de Industria 4.0">
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="2500">
                 <img src="./images/Congreso_industria_4_003.jpg" class="d-block w-100 img-fluid"
                     alt="Congreso de Industria 4.0">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon fontIcon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon fontIcon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
         </button>
     </section>
@@ -137,21 +138,32 @@
         <!--==== Contenedor Ultimas Noticias ====-->
         <p class="containerHeader col-12">Últimas noticias</p>
         <div class="containerNoticias row">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
+            <!-- Bloque noticia 1 -->
+            <div data-aos="fade-up" data-aos-duration="2500"
+                class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
                 <img class="imagenNoticias img-fluid w-100" src="./images/noticia01.jpg" alt="Ultimas noticias">
-                <p class="parrafoNoticias">22/10/2021 - Consideramos que el proyecto aprobado por la HCDN no
-                    recoge la
-                    preocupación y las
-                    recomendaciones propuestas por los distintos actores (cámaras y sectores empresarios,
-                    organizaciones políticas de todos los sectores, especialistas en la temática) durante la
-                    discusión del proyecto, que por otro lado entendemos se apresuró sin mayor fundamento,
+                <p class="tituloNoticias">
+                    <strong>Propuestas de reformas de la CETIC al proyecto de ley de Teletrabajo</strong>
+                </p>
+                <p style="font-size: 1rem;" class="py-0 my-0"><i>Publicado por Admin - 22 OCT de 2021</i></p>
+                <hr>
+                <p class="parrafoNoticias">Consideramos que el proyecto aprobado por la HCDN no recoge la
+                    preocupación y las recomendaciones propuestas por los distintos actores (cámaras y sectores
+                    empresarios, organizaciones políticas de todos los sectores, especialistas en la temática) durante
+                    la discusión del proyecto, que por otro lado entendemos se apresuró sin mayor fundamento,
                     siendo que se trata de una norma que comenzaría a regir tras el transcurso de 90 días
                     después de la finalización del aislamiento social, preventivo y obligatorio.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
+            <!-- Bloque noticia 2 -->
+            <div data-aos="fade-up" data-aos-duration="2500"
+                class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
                 <img class="imagenNoticias img-fluid w-100" src="./images/noticia02.jpg" alt="Ultimas noticias">
-                <p class="parrafoNoticias">12/09/2021 - CETIC, representada por su presidente Javier
-                    Montalbetti, estuvo
+                <p class="tituloNoticias">
+                    <strong>La CETIC estuvo presente en el Hackaton organizado por el municipio de San Miguel</strong>
+                </p>
+                <p style="font-size: 1rem;" class="py-0 my-0"><i>Publicado por Admin - 12 SEP de 2021</i></p>
+                <hr>
+                <p class="parrafoNoticias">La CETIC, representada por su presidente Javier Montalbetti, estuvo
                     presente en el Hackathon
                     San Miguel, donde participan los colegios secundarios de San Miguel.
                     Durante varias jornadas se hicieron propuestas sobre problemáticas generales como
@@ -160,44 +172,69 @@
                     Participó como jurado de los encuentros y también aportó el Know-how de la
                     experiencia en gestión empresaria.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
+            <!-- Bloque noticia 3 -->
+            <div data-aos="fade-up" data-aos-duration="2500"
+                class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
                 <img class="imagenNoticias img-fluid w-100" src="./images/noticia03.jpg" alt="Ultimas noticias">
-                <p class="parrafoNoticias">09/03/2021 - El presidente de la Cámara Empresaria de Tecnología,
-                    Informática
-                    y Comunicaciones (Cetic) e integrante de la CD de ADIBA, Javier
+                <p class="tituloNoticias">
+                    <strong>Declaraciones de Javier Montalbetti acerca del proyecto de reforma tributaria</strong>
+                </p>
+                <p style="font-size: 1rem;" class="py-0 my-0"><i>Publicado por Admin - 9 MAR de 2021</i></p>
+                <hr>
+                <p class="parrafoNoticias">El presidente de la Cámara Empresaria de Tecnología,
+                    Informática y Comunicaciones (Cetic) e integrante de la CD de ADIBA, Javier
                     Montalbetti, consideró que “el Estado sólo escucha a quienes le dicen que todo va bien y
                     se pierde el objetivo de la mejora continua” y eso repercute no sólo en la
                     competitividad de las pymes, sino también en su supervivencia. Por tal motivo, anunció
                     que una reforma tributaria que libere las fuerzas productivas de las pymes es imperiosa,
                     para sacar a la Argentina del estancamiento actual.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
+            <!-- Bloque noticia 4 -->
+            <div data-aos="fade-up" data-aos-duration="2500"
+                class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
                 <img class="imagenNoticias img-fluid w-100" src="./images/noticia04.jpg" alt="Ultimas noticias">
-                <p class="parrafoNoticias">07/12/2020 - CETIC, representada en esta oportunidad por su
+                <p class="tituloNoticias">
+                    <strong>Javier Montalbetti visitó la Escuela Técnica N°3 "Japón" de la localidad de San
+                        Miguel.</strong>
+                </p>
+                <p style="font-size: 1rem;" class="py-0 my-0"><i>Publicado por Admin - 7 DIC de 2020</i></p>
+                <hr>
+                <p class="parrafoNoticias">CETIC, representada en esta oportunidad por su
                     presidente Javier Montalbetti, visitó la emblemática
                     Escuela Técnica Nro. 3 "Japón" de la localidad de San Miguel. Junto a la Directora
                     Gladys Giordana, abordaron diferentes temáticas sobre la relación de la entidad
-                    educativa para con el empresariado
-                    Pyme de la provincia de Buenos Aires, y también comenzar en breve acciones conjuntas
-                    para lograr mayor impacto en la
-                    generación de puestos de trabajo calificados y desarrollo de emprendimientos
+                    educativa para con el empresariado Pyme de la provincia de Buenos Aires, y también comenzar en breve
+                    acciones conjuntas
+                    para lograr mayor impacto en la generación de puestos de trabajo calificados y desarrollo de
+                    emprendimientos
                     productivos.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
+            <!-- Bloque noticia 5 -->
+            <div data-aos="fade-up" data-aos-duration="2500"
+                class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
                 <img class="imagenNoticias img-fluid w-100" src="./images/noticia01.jpg" alt="Ultimas noticias">
-                <p class="parrafoNoticias">22/10/2021 - Consideramos que el proyecto aprobado por la HCDN no
-                    recoge la
-                    preocupación y las
-                    recomendaciones propuestas por los distintos actores (cámaras y sectores empresarios,
-                    organizaciones políticas de todos los sectores, especialistas en la temática) durante la
-                    discusión del proyecto, que por otro lado entendemos se apresuró sin mayor fundamento,
+                <p class="tituloNoticias">
+                    <strong>Propuestas de reformas de la CETIC al proyecto de ley de Teletrabajo</strong>
+                </p>
+                <p style="font-size: 1rem;" class="py-0 my-0"><i>Publicado por Admin - 22 OCT de 2021</i></p>
+                <hr>
+                <p class="parrafoNoticias">Consideramos que el proyecto aprobado por la HCDN no recoge la
+                    preocupación y las recomendaciones propuestas por los distintos actores (cámaras y sectores
+                    empresarios, organizaciones políticas de todos los sectores, especialistas en la temática) durante
+                    la discusión del proyecto, que por otro lado entendemos se apresuró sin mayor fundamento,
                     siendo que se trata de una norma que comenzaría a regir tras el transcurso de 90 días
                     después de la finalización del aislamiento social, preventivo y obligatorio.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
+            <!-- Bloque noticia 6 -->
+            <div data-aos="fade-up" data-aos-duration="2500"
+                class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 shadow">
                 <img class="imagenNoticias img-fluid w-100" src="./images/noticia02.jpg" alt="Ultimas noticias">
-                <p class="parrafoNoticias">12/09/2021 - CETIC, representada por su presidente Javier
-                    Montalbetti, estuvo
+                <p class="tituloNoticias">
+                    <strong>La CETIC estuvo presente en el Hackaton organizado por el municipio de San Miguel</strong>
+                </p>
+                <p style="font-size: 1rem;" class="py-0 my-0"><i>Publicado por Admin - 12 SEP de 2021</i></p>
+                <hr>
+                <p class="parrafoNoticias">La CETIC, representada por su presidente Javier Montalbetti, estuvo
                     presente en el Hackathon
                     San Miguel, donde participan los colegios secundarios de San Miguel.
                     Durante varias jornadas se hicieron propuestas sobre problemáticas generales como
@@ -217,23 +254,29 @@
                 destacado en el camino de crecimiento de nuestra Cámara, a continuación mencionamos a algunas de
                 ellas:</p><br>
             <div class="container-fluid d-flex justify-content-evenly flex-row row">
-                <div class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                    <img class="cardImg" src="./images/empresas1_microsoft.png" alt="Microsoft Argentina">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <img class="cardImgIndex" src="./images/empresas1_microsoft.png" alt="Microsoft Argentina">
                 </div>
-                <div class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                    <img class="cardImg" src="./images/empresas2_accenture.png" alt="Accenture">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <img class="cardImgIndex" src="./images/empresas2_accenture.png" alt="Accenture">
                 </div>
-                <div class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                    <img class="cardImg" src="./images/empresas3_globant.png" alt="Globant">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <img class="cardImgIndex" src="./images/empresas3_globant.png" alt="Globant">
                 </div>
-                <div class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                    <img class="cardImg" src="./images/empresas4_ibm.png" alt="IBM Argentina">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <img class="cardImgIndex" src="./images/empresas4_ibm.png" alt="IBM Argentina">
                 </div>
-                <div class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                    <img class="cardImg" src="./images/empresas5_oracle.png" alt="Oracle Argentina">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <img class="cardImgIndex" src="./images/empresas5_oracle.png" alt="Oracle Argentina">
                 </div>
-                <div class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                    <img class="cardImg" src="./images/empresas6_cognizant.png" alt="Cognizant">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="cardEmpresas col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <img class="cardImgIndex" src="./images/empresas6_cognizant.png" alt="Cognizant">
                 </div>
                 <p class="px-3">Todas las empresas y emprendedores que nos acompañan en nuestra tarea son importantes
                     para la
@@ -264,7 +307,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
-                    <p style="margin: 0rem; padding: 0rem 2.5rem 3rem 2rem;">El presidente de la CETIC, Javier
+                    <p class="parrafoNoticias">El presidente de la CETIC, Javier
                         Montalbetti fue co-organizador junto a ADIBA y UIPBA del
                         Congreso
                         de
@@ -279,7 +322,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
-                    <p style="margin: 0rem; padding: 0rem 2.5rem 3rem 2rem;">Cómo están las PyMES hoy en Argentina,
+                    <p class="parrafoNoticias">Cómo están las PyMES hoy en Argentina,
                         Políticas públicas, Juicio Laboral, Trabajo, Tecnología.
                         Charlamos
                         con
@@ -349,6 +392,10 @@
 
     <!-- JavaScript para Bootstrap -->
     <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 <!--================================== Fin del body ============================-->

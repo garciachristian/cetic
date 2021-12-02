@@ -61,7 +61,7 @@
   
   p {
     padding: 1.6rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2.4rem;
     text-align: justify;
   }
@@ -170,6 +170,15 @@
     }
   }
 
+  /* Formato para los iconos del Carrusel */
+ 
+  .fontIcon{
+    height: 10rem;
+    width: 5rem;
+    background-color:grey;
+    border-radius: 1.5rem;
+  }
+
   /* Formato del formulario */
   
   form {
@@ -181,8 +190,16 @@
   
   fieldset {
     padding: 1.6rem;
-    width: 40%;
     background-color: $grisFormulario;
+    font-family: $fuenteBody;
+    font-size: 1.2rem;
+    margin: auto;
+    border: 0.1rem solid $grisOscuro;
+    border-radius: 1.2rem;
+  }
+  .inputForm {
+    font-family: $fuenteBody;
+    font-size: 1.2rem;
   }
   
   /* Clase para los botones del formulario */
@@ -282,6 +299,7 @@
   /* Formato para los iconos en los títulos de redes sociales */
   .imageTitleRs {
     max-height: 2rem;
+    margin: auto;
     vertical-align: text-bottom;
     padding-top: 0.2rem;
   }
@@ -311,7 +329,7 @@
 
   /* Formato para las imagenes de Noticias */
   .imagenNoticias {
-    padding: 3rem 1.6rem 0.8rem 1.6rem;
+    padding: 3rem 1.4rem 0.8rem 1.4rem;
     box-sizing: border-box;
     border-radius: 2.5rem;
   }
@@ -321,8 +339,26 @@
   .parrafoNoticias {
     padding: 0rem 1.6rem 2.2rem 1.6rem;
     margin: 0rem 0rem;
+    font-size: 1.3rem;
+    text-align: justify;
   }
   
+  .tituloNoticias {
+    padding: 0rem 1.6rem;
+    margin: 0rem 0rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  /* Titulo para noticias en la pagina de noticias */
+  
+  .tituloNoticiasPagina {
+    padding: 0rem 1.6rem;
+    margin: 0rem 0rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+
   /* Formato del footer */
   
   footer {
@@ -384,6 +420,7 @@
     border-spacing: 0.8rem;
   }
 
+
   
   /* ================================================================================== */
   /* ----------------------------------- MEDIA QUERIES -------------------------------- */
@@ -403,11 +440,37 @@
         width: 16rem;
       }
     }
-  
-    /* Achico el logo del encabezado */
-  }
-  
-  /* Aplico media query para CELULARES en modo vertical */
+
+    /* Agrando el formulario de contacto */
+    fieldset {
+      width: 100%;
+    }
+    
+    /* Quito el texto y el titulo de las Card para emrpesas */
+    .cardExtracto {
+        display: none;
+    }
+    .contenedorCards {
+      margin: auto;
+      width: 75%;
+    }
+    .cardTitulo {
+       display: none;
+    }
+
+    /* Posiciono los botones del carrusel */
+    .fontIcon{
+      height: 8rem;
+      width: 3rem;
+      background-color:grey;
+      border-radius: 1.5rem;
+      position: absolute;
+      top: 20%;
+    }
+
+  } /* fin mediaquery */
+
+  /*================ Aplico media query para CELULARES en modo vertical ==================*/
   @media only screen and (max-width: 480px) {
     /* Achico la imagen del logo */
   
@@ -424,7 +487,37 @@
             }
         }
     }
-  }
+
+    /* Agrando el formulario de contacto */
+    fieldset {
+      width: 100%;
+    }
+
+    /* Quito el texto y el titulo de las Card para emrpesas */
+    .cardExtracto {
+      display: none;
+    }
+    .contenedorCards {
+      margin: auto;
+      width: 75%;
+    }
+    .cardTitulo {
+      display: none;
+    }
+  
+
+    /* Posiciono los botones del carrusel */
+    .fontIcon{
+      height: 8rem;
+      width: 3rem;
+      background-color:grey;
+      border-radius: 1.5rem;
+      position: absolute;
+      top: 20%;
+    }
+
+  } /* Fin mediaquery */
+
   
   /* ================================================================================== */
   /* ------------------- ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES ----------------- */
@@ -505,7 +598,7 @@
   
   /* Aplico un efecto zumbido a los logos de la seccion empresas */
   
-  .cardImg {
+  .cardImgIndex {
     width: 50%;
     &:hover, &:focus, &:active {
       animation-name: buzz;

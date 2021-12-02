@@ -24,20 +24,20 @@ a:hover {
   text-decoration: none;
 }
 
-.contenedor {
-  max-width: 1000px;
-  width: 60%;
-  margin: 0 auto;
-}
-
+/* .contenedor {
+	max-width: 1000px;
+	width: 60%;
+	margin: 0 auto;
+} */
 .contenedorCards {
-  margin: 70px 0;
+  margin: auto;
+  width: 50%;
 }
 
 .card {
   background: white;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 1.5rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,14 +49,12 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .cardThumbnail {
-  min-width: 20rem;
   min-height: auto;
-  margin-right: 20px;
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
   display: inline-block;
 }
@@ -67,9 +65,9 @@ a:hover {
 
 .cardTitulo {
   font-family: 'Raleway', sans-serif;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -79,9 +77,9 @@ a:hover {
 }
 
 .cardExtracto {
-  line-height: 28px;
+  line-height: 2.8rem;
   color: #6D6D6D;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .boton {
@@ -174,7 +172,7 @@ header {
 /* Formato de parrafos */
 p {
   padding: 1.6rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.4rem;
   text-align: justify;
 }
@@ -297,6 +295,14 @@ nav ul li a:hover {
   background-color: #ac0304;
 }
 
+/* Formato para los iconos del Carrusel */
+.fontIcon {
+  height: 10rem;
+  width: 5rem;
+  background-color: grey;
+  border-radius: 1.5rem;
+}
+
 /* Formato del formulario */
 form {
   margin: 1.6rem;
@@ -306,8 +312,17 @@ form {
 /* Formato del contenedor dentro del formulario */
 fieldset {
   padding: 1.6rem;
-  width: 40%;
   background-color: silver;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin: auto;
+  border: 0.1rem solid #333;
+  border-radius: 1.2rem;
+}
+
+.inputForm {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
 }
 
 /* Clase para los botones del formulario */
@@ -403,6 +418,7 @@ aside {
 /* Formato para los iconos en los títulos de redes sociales */
 .imageTitleRs {
   max-height: 2rem;
+  margin: auto;
   vertical-align: text-bottom;
   padding-top: 0.2rem;
 }
@@ -442,7 +458,7 @@ aside {
 
 /* Formato para las imagenes de Noticias */
 .imagenNoticias {
-  padding: 3rem 1.6rem 0.8rem 1.6rem;
+  padding: 3rem 1.4rem 0.8rem 1.4rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2.5rem;
@@ -452,6 +468,23 @@ aside {
 .parrafoNoticias {
   padding: 0rem 1.6rem 2.2rem 1.6rem;
   margin: 0rem 0rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.tituloNoticias {
+  padding: 0rem 1.6rem;
+  margin: 0rem 0rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+/* Titulo para noticias en la pagina de noticias */
+.tituloNoticiasPagina {
+  padding: 0rem 1.6rem;
+  margin: 0rem 0rem;
+  font-size: 2rem;
+  text-align: left;
 }
 
 /* Formato del footer */
@@ -535,10 +568,34 @@ footer div {
   header .imageSize {
     width: 16rem;
   }
-  /* Achico el logo del encabezado */
+  /* Agrando el formulario de contacto */
+  fieldset {
+    width: 100%;
+  }
+  /* Quito el texto y el titulo de las Card para emrpesas */
+  .cardExtracto {
+    display: none;
+  }
+  .contenedorCards {
+    margin: auto;
+    width: 75%;
+  }
+  .cardTitulo {
+    display: none;
+  }
+  /* Posiciono los botones del carrusel */
+  .fontIcon {
+    height: 8rem;
+    width: 3rem;
+    background-color: grey;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 20%;
+  }
 }
 
-/* Aplico media query para CELULARES en modo vertical */
+/* fin mediaquery */
+/*================ Aplico media query para CELULARES en modo vertical ==================*/
 @media only screen and (max-width: 480px) {
   /* Achico la imagen del logo */
   .imageSize {
@@ -548,8 +605,33 @@ footer div {
   header div h1 {
     display: none;
   }
+  /* Agrando el formulario de contacto */
+  fieldset {
+    width: 100%;
+  }
+  /* Quito el texto y el titulo de las Card para emrpesas */
+  .cardExtracto {
+    display: none;
+  }
+  .contenedorCards {
+    margin: auto;
+    width: 75%;
+  }
+  .cardTitulo {
+    display: none;
+  }
+  /* Posiciono los botones del carrusel */
+  .fontIcon {
+    height: 8rem;
+    width: 3rem;
+    background-color: grey;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 20%;
+  }
 }
 
+/* Fin mediaquery */
 /* ================================================================================== */
 /* ------------------- ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES ----------------- */
 /* ================================================================================== */
@@ -661,11 +743,11 @@ footer div {
 }
 
 /* Aplico un efecto zumbido a los logos de la seccion empresas */
-.cardImg {
+.cardImgIndex {
   width: 50%;
 }
 
-.cardImg:hover, .cardImg:focus, .cardImg:active {
+.cardImgIndex:hover, .cardImgIndex:focus, .cardImgIndex:active {
   -webkit-animation-name: buzz;
           animation-name: buzz;
   -webkit-animation-duration: 0.15s;
