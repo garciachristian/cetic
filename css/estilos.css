@@ -368,16 +368,19 @@ aside {
 
 /* Contenedor para los iFrame de Youtube */
 .containerYoutube {
-  background-color: white;
+  height: 120vh;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 0.4rem solid #333;
   border-top: none;
   width: 100%;
   margin: auto;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 /* Formato para el iFrame de Twitter */
 .twitterBox {
-  height: 157vh;
+  height: 119vh;
   border: 0.1rem solid #333;
   -webkit-box-shadow: 0 0.6rem #333;
           box-shadow: 0 0.6rem #333;
@@ -470,6 +473,7 @@ aside {
   margin: 0rem 0rem;
   font-size: 1.3rem;
   text-align: justify;
+  line-height: 2rem;
 }
 
 .tituloNoticias {
@@ -554,6 +558,75 @@ footer div {
   font-size: 1.2rem;
   border-collapse: separate;
   border-spacing: 0.8rem;
+}
+
+/* Formato para las imagenes en la pagina de Formacion Profesional */
+.image {
+  position: relative;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.image__overlay > * {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.image__overlay--blur {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+  background: rgba(51, 51, 51, 0.8);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* ================================================================================== */

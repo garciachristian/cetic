@@ -248,17 +248,20 @@
   
   /* Contenedor para los iFrame de Youtube */
   .containerYoutube {
-    background-color: white;
+    height: 120vh;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 0.4rem solid $grisOscuro;
     border-top: none;
     width: 100%;
     margin: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
   }
 
   /* Formato para el iFrame de Twitter */
 
   .twitterBox {
-      height: 157vh;
+      height: 119vh;
       border: 0.1rem solid $grisOscuro;
       box-shadow: 0 0.6rem $grisOscuro;
       padding: 0;
@@ -284,6 +287,7 @@
   }
 
   /* Contenedor para los titulos de las redes sociales, borde redondeado solo arriba */
+  
   .containerHeaderRs {
     text-transform: capitalize;
     text-align: center;
@@ -297,6 +301,7 @@
   }
 
   /* Formato para los iconos en los títulos de redes sociales */
+  
   .imageTitleRs {
     max-height: 2rem;
     margin: auto;
@@ -305,6 +310,7 @@
   }
 
   /* Contenedor para la seccion noticias, clase padre */
+  
   .containerNoticias {
     margin-bottom: 3.2rem;
     div {
@@ -314,6 +320,7 @@
   }
   
   /* Contenedor para la seccion de empresas destacadas en el home */
+  
   .cardEmpresas {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 1.6rem;
@@ -328,6 +335,7 @@
   }
 
   /* Formato para las imagenes de Noticias */
+  
   .imagenNoticias {
     padding: 3rem 1.4rem 0.8rem 1.4rem;
     box-sizing: border-box;
@@ -341,6 +349,7 @@
     margin: 0rem 0rem;
     font-size: 1.3rem;
     text-align: justify;
+    line-height: 2rem;
   }
   
   .tituloNoticias {
@@ -411,6 +420,7 @@
   }
 
   /* Formato para tabla de la Comision Directiva*/
+  
   .tablaCD {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 1rem;  
@@ -418,6 +428,52 @@
     font-size: 1.2rem;
     border-collapse: separate;
     border-spacing: 0.8rem;
+  }
+
+  /* Formato para las imagenes en la pagina de Formacion Profesional */
+
+  .image {
+    position: relative;
+  }
+  .image__img {
+    display: block;
+    width: 100%;
+  }
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    >* {
+      transform: translateY(20px);
+      transition: transform 0.25s;
+    }
+    &:hover {
+      opacity: 1;
+      >* {
+        transform: translateY(0);
+      }
+    }
+  }
+  .image__overlay--blur {
+    backdrop-filter: blur(5px);
+  }
+  .image__overlay--primary {
+    background: rgba(51, 51, 51, 0.8);
+  }
+  .image__title {
+    font-size: 2em;
+    font-weight: bold;
   }
 
 
